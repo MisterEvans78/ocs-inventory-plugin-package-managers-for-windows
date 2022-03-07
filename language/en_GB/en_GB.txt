@@ -1,0 +1,3 @@
+30000 Windows Package Manager Sources
+30001 Source name
+30002 Source URL
