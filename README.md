@@ -1,1 +1,1 @@
-# Windows Package Manager Sources
+# Package managers for Windows

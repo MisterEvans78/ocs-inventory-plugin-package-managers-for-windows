@@ -5,9 +5,9 @@
         <value>fr_FR</value>
     </hook>
     <hook type="cdentry">
-        <identifier>cd_WingetSources</identifier>
+        <identifier>cd_winpkgman</identifier>
         <translation>30000</translation>
-        <category>other</category>
-        <available>WingetSources</available>
+        <category>software</category>
+        <available>winpkgman</available>
     </hook>
 </hookstore>

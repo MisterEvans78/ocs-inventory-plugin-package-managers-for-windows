@@ -1,20 +1,20 @@
-package Apache::Ocsinventory::Plugins::Wingetsources::Map;
+package Apache::Ocsinventory::Plugins::Winpkgman::Map;
  
 use strict;
  
 use Apache::Ocsinventory::Map;
 
-$DATA_MAP{WingetSources} = {
+$DATA_MAP{winpkgman} = {
    mask => 0,
    multi => 1,
    auto => 1,
    delOnReplace => 1,
-   sortBy => 'SOURCE_NAME',
+   sortBy => 'PKGMAN_NAME',
    writeDiff => 0,
    cache => 0,
    fields => {
-       SOURCE_NAME => {},
-       SOURCE_URL => {}
+       PKGMAN_NAME => {},
+       PKGMAN_VERSION => {}
    }
 };
 1;

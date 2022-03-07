@@ -1,5 +1,5 @@
 {
-"displayName" : "Windows Package Manager (winget) Sources",
+"displayName" : "Package managers for Windows",
 "author" : ["MisterEvans78"],
 "contributor" : [],
 "supportedAgent" : ["Windows"],
@@ -7,7 +7,7 @@
 "licence" : "GPLv2",
 "description" : 
     {
-        "fr" : "Plugin pour récupérer les sources de Windows Package Manager",
-        "en" : "Plugin to retrieve Windows Package Manager sources"
+        "fr" : "Plugin pour récupérer les gestionnaires de paquets installés pour Windows",
+        "en" : "Plugin to retrieve installed package managers for Windows"
     }
 }
