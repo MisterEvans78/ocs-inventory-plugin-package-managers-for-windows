@@ -1,5 +1,6 @@
 $xml = ""
 
+# Chocolatey
 if (Get-Command "choco" -ErrorAction SilentlyContinue) {
     $chocoversion = choco -v
 
@@ -9,6 +10,7 @@ if (Get-Command "choco" -ErrorAction SilentlyContinue) {
     $xml += "</WINPKGMAN>"
 }
 
+# Microsoft App Installer
 $appinstaller = Get-AppxPackage -AllUsers -Name "Microsoft.DesktopAppInstaller" | Select-Object Name, Version -First 1
 
 if ($appinstaller) {
@@ -20,6 +22,7 @@ if ($appinstaller) {
 
 }
 
+# Winget source
 $winget = Get-AppxPackage -AllUsers -Name "Microsoft.Winget.Source" | Select-Object Name, Version -First 1
 
 if ($winget) {
