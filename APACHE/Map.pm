@@ -14,6 +14,7 @@ $DATA_MAP{winpkgman} = {
    cache => 0,
    fields => {
        PKGMAN_NAME => {},
+       PKGMAN_PUBLISHER => {},
        PKGMAN_VERSION => {}
    }
 };

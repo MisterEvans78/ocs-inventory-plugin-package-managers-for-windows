@@ -6,6 +6,7 @@ if (Get-Command "choco" -ErrorAction SilentlyContinue) {
 
     $xml += "<WINPKGMAN>"
     $xml += "<PKGMAN_NAME>Chocolatey</PKGMAN_NAME>"
+    $xml += "<PKGMAN_PUBLISHER>Chocolatey</PKGMAN_PUBLISHER>"
     $xml += "<PKGMAN_VERSION>$chocoversion</PKGMAN_VERSION>"
     $xml += "</WINPKGMAN>"
 }
@@ -18,7 +19,8 @@ if (Get-Command "Get-AppxPackage" -ErrorAction SilentlyContinue) {
     if ($appinstaller) {
 
         $xml += "<WINPKGMAN>"
-        $xml += "<PKGMAN_NAME>App Installer (Microsoft)</PKGMAN_NAME>"
+        $xml += "<PKGMAN_NAME>App Installer</PKGMAN_NAME>"
+        $xml += "<PKGMAN_PUBLISHER>Microsoft Corporation</PKGMAN_PUBLISHER>"
         $xml += "<PKGMAN_VERSION>$($appinstaller.Version)</PKGMAN_VERSION>"
         $xml += "</WINPKGMAN>"
 
@@ -31,6 +33,7 @@ if (Get-Command "Get-AppxPackage" -ErrorAction SilentlyContinue) {
         
         $xml += "<WINPKGMAN>"
         $xml += "<PKGMAN_NAME>Windows Package Manager Source (winget)</PKGMAN_NAME>"
+        $xml += "<PKGMAN_PUBLISHER>Microsoft Corporation</PKGMAN_PUBLISHER>"
         $xml += "<PKGMAN_VERSION>$($winget.Version)</PKGMAN_VERSION>"
         $xml += "</WINPKGMAN>"
     }

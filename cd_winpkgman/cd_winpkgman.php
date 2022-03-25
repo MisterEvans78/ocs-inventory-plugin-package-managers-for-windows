@@ -27,6 +27,7 @@ $tab_options['table_name'] = $table_name;
 echo open_form($form_name);
 $list_fields = array(
     $l->g(30001) => 'PKGMAN_NAME',
+    $l->g(69) => 'PKGMAN_PUBLISHER',
     $l->g(277) => 'PKGMAN_VERSION'
 );
 // columns to include at any time and default columns
